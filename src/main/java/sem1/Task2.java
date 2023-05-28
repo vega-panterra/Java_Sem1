@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class Task2 {
     public static void main(String[] args) {
         System.out.print("Введите выбранное положительное число от 1 до 1000: ");
-        Scanner Number = new Scanner(System.in);
-        int N = Number.nextInt();
-        Number.close();
+        Scanner scan = new Scanner(System.in);
+        int N = scan.nextInt();
+        scan.close();
         List<Integer> primes = new ArrayList<>();
 
         for (int i = 2; i <= N; i++) {
